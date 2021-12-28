@@ -1,17 +1,46 @@
 import "./header.css";
-
 export default function Header() {
   return (
-    <div className="header">
-      <div className="headerTitles">
-        <span className="headerTitleSm">React & Node</span>
-        <span className="headerTitleLg">Blog</span>
-      </div>
-      <img
-        className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        alt=""
-      />
-    </div>
+    <footer className="footer">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-9">
+                        <div className="widget">
+                            <div className="footer-text text-left">
+                                <a href="index.html"><img src="images/main/footer-logo.png" alt="" className="img-fluid" /></a>
+                                <p>YTU BLog, Bilişim dünyası hakkında bilgilendirici yazıların yayınlandığı bağımsız bir kuruluştur.</p>
+                                <div className="social">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>              
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i className="fa fa-twitter"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div className="widget">
+                            <h2 className="widget-title">Categories</h2>
+                            <div className="link-widget">
+                                <ul>
+                                    <li><a href="#">Yazılım</a></li>
+                                    <li><a href="#">Teknoloji</a></li>
+                                    <li><a href="#">Gündem </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div className="row">
+                    <div className="col-md-12 text-center">
+                        <br/>
+                        <div className="copyright">&copy; YTU Blog Team</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
   );
 }

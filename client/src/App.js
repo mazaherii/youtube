@@ -12,7 +12,7 @@ import { Context } from "./context/Context";
 function App() {
   const { user } = useContext(Context);
   return (
-    <Router>
+    <Router className="wrapper">
       <TopBar />
       <Switch>
         <Route exact path="/">

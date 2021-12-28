@@ -19,7 +19,7 @@
 .singlePostTitle {
   text-align: center;
   margin: 10px;
-  font-family: "Lora", serif;
+  font-family:"Poppins";
   font-size: 28px;
 }
 
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  font-family: "Varela Round", sans-serif;
+  font-family:"Poppins";
   color: #b39656;
 }
 

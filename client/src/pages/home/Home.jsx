@@ -19,11 +19,12 @@ export default function Home() {
   }, [search]);
   return (
     <>
-      <Header />
-      <div className="home">
+      
+      <div className="home col-lg-9">
         <Posts posts={posts} />
         <Sidebar />
       </div>
+      <Header />
     </>
   );
 }

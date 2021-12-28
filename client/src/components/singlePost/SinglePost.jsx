@@ -49,20 +49,20 @@ export default function SinglePost() {
     <div className="singlePost">
       <div className="singlePostWrapper">
         {post.photo && (
-          <img src={PF + post.photo} alt="" className="singlePostImg" />
+          <img src={PF + post.photo} alt="" className="single-post-media" />
         )}
         {updateMode ? (
           <input
             type="text"
             value={title}
-            className="singlePostTitleInput"
+            className="blog-title-area text-center"
             autoFocus
             onChange={(e) => setTitle(e.target.value)}
           />
         ) : (
           <h1 className="singlePostTitle">
             {title}
-            {post.username === user?.username && (
+            {(post.username === user?.username || user.username == "admin") && (
               <div className="singlePostEdit">
                 <i
                   className="singlePostIcon far fa-edit"

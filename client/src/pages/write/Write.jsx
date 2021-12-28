@@ -32,12 +32,15 @@ export default function Write() {
     } catch (err) {}
   };
   return (
-    <div className="write">
+    <div className="col-lg-12 write">
+      <div className="writeImg">
+			<img src="https://dersaadetcafe.com/cdn/new-post.jpg" className="writeImg" />
+			</div>
       {file && (
         <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
       )}
       <form className="writeForm" onSubmit={handleSubmit}>
-        <div className="writeFormGroup">
+        <div className="writeFormGroup col-lg-12">
           <label htmlFor="fileInput">
             <i className="writeIcon fas fa-plus"></i>
           </label>
@@ -55,7 +58,7 @@ export default function Write() {
             onChange={e=>setTitle(e.target.value)}
           />
         </div>
-        <div className="writeFormGroup">
+        <div className="writeFormGroup col-lg-12">
           <textarea
             placeholder="Tell your story..."
             type="text"
@@ -63,7 +66,7 @@ export default function Write() {
             onChange={e=>setDesc(e.target.value)}
           ></textarea>
         </div>
-        <button className="writeSubmit" type="submit">
+        <button className="gangeri" type="submit">
           Publish
         </button>
       </form>
