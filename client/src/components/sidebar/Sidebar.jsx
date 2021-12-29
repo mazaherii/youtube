@@ -30,8 +30,8 @@ export default function Sidebar() {
       <h4 className="widget-title">Follow Us:</h4>
 
           <div className="social">
-          <Link to="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook sag"></i></Link>              
-          <Link to="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i className="fa fa-twitter soldan"></i></Link>
+          <a href="https://tr-tr.facebook.com/YildizEdu/" target={'_blank'} data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook sag"></i></a>              
+          <a href="https://twitter.com/YildizEdu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target={'_blank'} data-toggle="tooltip" data-placement="bottom" title="Twitter"><i className="fa fa-twitter soldan"></i></a>
 
       </div>
   </div>

@@ -5,7 +5,7 @@ import { Context } from "../../context/Context";
 
 export default function Write() {
   const [title, setTitle] = useState("");
-  const [subject, setSubject] = useState("");
+  const [categories, setCategories] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
@@ -15,6 +15,7 @@ export default function Write() {
     const newPost = {
       username: user.username,
       title,
+      categories,
       desc,
     };
     if (file) {
@@ -60,14 +61,15 @@ export default function Write() {
           />
         </div>
         <div className="writeCategories">
-          <label for="subject">Blog Kategorisi  </label>
-              <select id="subject" name="subject" onChange={e=>setSubject(e.target.value)} >
-              <option value="yazilim">Yazılım</option>
-              <option value="teknoloji">Teknoloji</option>
-              <option value="muzik">Müzik</option> 
-              <option value="gundem">Gündem</option>
-              <option value="havadis">Havadis</option>
-              <option value="diger">Diğer</option>
+          <label for="categories" className="categories">Category</label>
+              <select id="categories" name="categories" onChange={e=>setCategories(e.target.value)} >
+              <option value="" selected disabled hidden>Choose...</option>
+              <option value="software">Software</option>
+              <option value="tech">Tech</option>
+              <option value="music">Music</option> 
+              <option value="today">Today</option>
+              <option value="news">News</option>
+              <option value="other">Other</option>
               </select>
 
         </div>

@@ -12,6 +12,7 @@ export default function SinglePost() {
   const PF = "http://localhost:5000/images/";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
+  const [categories,setCategories]=useState("");
   const [desc, setDesc] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
 
@@ -21,10 +22,10 @@ export default function SinglePost() {
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
+      setCategories(res.data.categories);
     };
     getPost();
   }, [path]);
-
   const handleDelete = async () => {
     try {
       await axios.delete(`/posts/${post._id}`, {
@@ -62,7 +63,7 @@ export default function SinglePost() {
         ) : (
           <h1 className="singlePostTitle">
             {title}
-            {(post.username === user?.username || post.username == "admin") && (
+            {(post.username === user?.username) && (
               <div className="singlePostEdit">
                 <i
                   className="singlePostIcon far fa-edit"
@@ -81,6 +82,12 @@ export default function SinglePost() {
             Author:
             <Link to={`/?user=${post.username}`} className="linko">
               <b> {post.username}</b>
+            </Link>
+          </span>
+          <span className="singlePostSubject">
+            Konu:
+            <Link to={`/?categories=${post.categories}`} className="linko">
+              <b> {post.categories}</b>
             </Link>
           </span>
           <span className="singlePostDate">

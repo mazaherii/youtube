@@ -17,19 +17,6 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <div className="widget">
-                            <h2 className="widget-title">Categories</h2>
-                            <div className="link-widget">
-                                <ul>
-                                    <li><a href="#">Yazılım</a></li>
-                                    <li><a href="#">Teknoloji</a></li>
-                                    <li><a href="#">Gündem </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     
                 </div>
 

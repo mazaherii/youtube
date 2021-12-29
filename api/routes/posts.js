@@ -17,8 +17,11 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-    if (post.username === req.body.username || "admin") {
+    if (post.username === req.body.username || "admin" ===req.body.username) {
       try {
+        if ( "admin" === req.body.username){
+          delete(req.params.username);
+        }
         const updatedPost = await Post.findByIdAndUpdate(
           req.params.id,
           {
