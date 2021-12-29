@@ -42,11 +42,11 @@ export default function Settings() {
     }
   };
   return (
-    <div className="settings">
+    <div className="settings col-lg-9">
       <div className="settingsWrapper">
         <div className="settingsTitle">
-          <span className="settingsUpdateTitle">Update Your Account</span>
-          <span className="settingsDeleteTitle">Delete Account</span>
+          <h3 className="settingsTitle">Update Your Account</h3>
+          <span className="dangeri">Delete Account</span>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
           <label>Profile Picture</label>

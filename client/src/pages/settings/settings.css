@@ -1,82 +1,112 @@
-.settings {
-  display: flex;
+.settings{
+	display: flex;
+	margin: 0 auto;
+	padding-top:50px;
 }
 
-.settingsWrapper {
-  flex: 9;
-  padding: 20px;
+.settingsWrapper{
+	flex: 9;
+	padding: 20px;
+
+
 }
 
-.settingsTitle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.dangeri {
+	background: crimson;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 25px 10px 25px;
 }
 
-.settingsUpdateTitle {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: lightcoral;
+.gangeri {
+	background: #3f32a2;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 25px 10px 25px;
+	font-size: 22px;
+	font-weight: bolder;
+	max-width: 300px;
 }
 
-.settingsDeleteTitle {
-  color: red;
-  font-size: 12px;
-  cursor: pointer;
+.settingsTitle{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 }
 
-.settingsForm {
-  display: flex;
-  flex-direction: column;
+.settingsUpdateTitle{
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: lightcoral;
 }
 
-.settingsPP {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
+.settingsDeleteTitle{
+
+	color: red;
+	font-size: 12px;
+	cursor: pointer;
 }
 
-.settingsPP > img {
-  width: 70px;
-  height: 70px;
-  border-radius: 20px;
-  object-fit: cover;
+.settingsForm{
+	display: flex;
+	flex-direction: column;
+
 }
 
-.settingsPPIcon {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: lightcoral;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  cursor: pointer;
+.settingsPP{
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+
 }
 
-.settingsForm > label {
-  font-size: 20px;
-  margin-top: 20px;
+.settingsPP > img{
+	width: 70px;
+	height: 70px;
+	border-radius: 20px;
+	object-fit: cover;
 }
 
-.settingsForm > input {
-  color: gray;
-  margin: 10px 0;
-  height: 30px;
-  border: none;
-  border-bottom: 1px solid lightgray;
+.settingsPPIcon{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: lightcoral;
+	color: black;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-left: 10px;
+	cursor: pointer;
+
+}
+
+.settingsForm > label{
+	font-size: 20px;
+	margin-top: 20px;
+
+}
+
+.settingsForm > input{
+	color: grey;
+	margin: 10px 0;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+
 }
 
 .settingsSubmit{
-    width: 150px;
-    align-self: center;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: teal;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
+	width: 150px;
+	align-items: center;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	background-color: teal;
+	padding: 10px;
+	margin-top: 20px;
+	cursor: pointer;
 }

@@ -33,22 +33,26 @@ export default function TopBar() {
 							<li className="nav-item">
                                 <Link className="nav-link" to="/">
 								{user ? (
-									<Link to="/settings">
+									<Link to="/settings" className="navbar-nav">
 										<img className="topImg" src="https://api.duniagames.co.id/api/content/upload/file/8143860661599124172.jpg" alt="blog"  />
 									</Link>
 									) : (
+                  <div className="navbar-nav" >
 									<ul className="nav-item">
 											<li className="nav-link">
-											<Link className="nav-link" to="/login">
+											<Link className="nav-link mama" to="/login">
 											LOGIN
 											</Link>
 											</li>
-											<li className="nav-item">
-											<Link className="nav-link" to="/register">
+									</ul>
+                  <ul className="nav-item">
+											<li className="nav-link">
+											<Link className="nav-link mama" to="/register">
 											REGISTER
 											</Link>
 											</li>
 									</ul>
+                  </div>
 									)}
 								</Link>
                             </li>

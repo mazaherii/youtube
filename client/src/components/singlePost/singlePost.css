@@ -1,6 +1,9 @@
 .singlePost {
   flex: 9;
 }
+.singlePost a{
+  color: #181818;
+}
 
 .singlePostWrapper {
   padding: 20px;
@@ -20,12 +23,12 @@
   text-align: center;
   margin: 10px;
   font-family:"Poppins";
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .singlePostTitleInput {
   margin: 10px;
-  font-family: "Lora", serif;
+  font-family:"Poppins";
   font-size: 28px;
   text-align: center;
   border: none;
@@ -48,11 +51,11 @@
 }
 
 .singlePostIcon:first-child {
-  color: teal;
+  color:#181818;
 }
 
 .singlePostIcon:last-child {
-  color: tomato;
+  color: #181818;
 }
 
 .singlePostInfo {
@@ -61,11 +64,11 @@
   justify-content: space-between;
   font-size: 16px;
   font-family:"Poppins";
-  color: #b39656;
+  color: #181818;
 }
 
 .singlePostDesc {
-  color: #666;
+  color: #181818;
   font-size: 18px;
   line-height: 25px;
 }
@@ -78,7 +81,7 @@
 
 .singlePostDescInput {
   border: none;
-  color: #666;
+  color: #181818;
   font-size: 18px;
   line-height: 25px;
 }
@@ -91,9 +94,13 @@
   border: none;
   background-color: teal;
   padding: 5px;
-  color: white;
   border-radius: 5px;
   cursor: pointer;
   align-self: flex-end;
   margin-top: 20px;
+}
+.linko{
+  color:#181818;
+  background-color: #3e32a2;
+  margin-left: 2px;
 }

@@ -9,7 +9,7 @@ export default function Single() {
       <div className="container">
         <div className="col-lg-9 col-md-12 col-sm-12 col-xs-12">
           <div className="page-wrapper">
-            <div className="blog-title-area text-center">
+            <div className="blog-title-area">
               <SinglePost/>
             </div>
           </div>
