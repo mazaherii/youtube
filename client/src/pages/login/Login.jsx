@@ -25,16 +25,16 @@ export default function Login() {
 
   return (
     <div className="login">
-      <span className="loginTitle">Login</span>
+      <h3 className="loginTitle">Login</h3>
       <form className="loginForm" onSubmit={handleSubmit}>
-        <label>Username</label>
+        <h5>Username</h5>
         <input
           type="text"
           className="loginInput"
           placeholder="Enter your username..."
           ref={userRef}
         />
-        <label>Password</label>
+        <h5>Password</h5>
         <input
           type="password"
           className="loginInput"
@@ -45,11 +45,7 @@ export default function Login() {
           Login
         </button>
       </form>
-      <button className="loginRegisterButton">
-        <Link className="link" to="/register">
-          Register
-        </Link>
-      </button>
+
     </div>
   );
 }

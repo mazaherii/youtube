@@ -25,23 +25,23 @@ export default function Register() {
   };
   return (
     <div className="register">
-      <span className="registerTitle">Register</span>
+      <h3 className="registerTitle">Register</h3>
       <form className="registerForm" onSubmit={handleSubmit}>
-        <label>Username</label>
+        <h5>Username</h5>
         <input
           type="text"
           className="registerInput"
           placeholder="Enter your username..."
           onChange={(e) => setUsername(e.target.value)}
         />
-        <label>Email</label>
+        <h5>Email</h5>
         <input
           type="text"
           className="registerInput"
           placeholder="Enter your email..."
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label>Password</label>
+        <h5>Password</h5>
         <input
           type="password"
           className="registerInput"
@@ -52,11 +52,7 @@ export default function Register() {
           Register
         </button>
       </form>
-      <button className="registerLoginButton">
-        <Link className="link" to="/login">
-          Login
-        </Link>
-      </button>
+
       {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
     </div>
   );

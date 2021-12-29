@@ -4,12 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
 }
 
 .registerTitle {
@@ -28,8 +22,10 @@
 
 .registerInput {
   padding: 10px;
-  background-color: white;
-  border: none;
+  background-color: #f6f6f6;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  margin-bottom: 25px;
 }
 
 .registerButton {
