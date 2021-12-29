@@ -1553,9 +1553,6 @@ hr.invis3 {
     opacity: 0;
 }
 
-.hovereffect span.videohover::before {
-}
-
 .blog-list .blog-meta.big-meta h4 {
     margin-left: -20%;
     margin-top: 1rem;
@@ -1926,7 +1923,6 @@ hr.invis3 {
 .loader {
     display: block;
     margin: 20px auto 0;
-    vertical-align: middle;
 }
 
 #preloader {

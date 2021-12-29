@@ -7,7 +7,9 @@ import './css/main/main.css';
 import './css/colors.css'; 
 import './css/responsive.css'; 
 
+
 ReactDOM.render(
+  
   <React.StrictMode>
     <ContextProvider>
       <App />
@@ -15,3 +17,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+

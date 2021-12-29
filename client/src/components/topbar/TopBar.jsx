@@ -57,7 +57,7 @@ export default function TopBar() {
 								</Link>
                             </li>
 							<li className="nav-item">
-                                <Link className="nav-link" href="#"><i className="fa fa-google"></i></Link>
+                                <div id="google_translate_element" className="nav-link"></div> 
                             </li>
                         </ul>
                     </div>

@@ -2777,9 +2777,6 @@ html {
 	border-color: #181818;
   }
   
-  .btn-primary:focus, .btn-primary.focus {
-
-  }
   
   .btn-primary.disabled, .btn-primary:disabled {
 	background-color: #0275d8;
@@ -2805,10 +2802,7 @@ html {
 	background-color: #e6e6e6;
 	border-color: #adadad;
   }
-  
-  .btn-secondary:focus, .btn-secondary.focus {
 
-  }
   
   .btn-secondary.disabled, .btn-secondary:disabled {
 	background-color: #fff;
@@ -9405,3 +9399,16 @@ html {
   }
   /*# sourceMappingURL=bootstrap.css.map */
   
+
+  .writeCategories{
+    padding: 20px;
+    margin-left: 150px;
+    font-size: 20px;
+    color: rgb(121, 118, 118);
+    border: none;
+  
+  }
+  .categories{
+    margin-right:20px;
+    margin-bottom: 50px;
+  }

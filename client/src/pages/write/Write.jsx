@@ -5,6 +5,7 @@ import { Context } from "../../context/Context";
 
 export default function Write() {
   const [title, setTitle] = useState("");
+  const [subject, setSubject] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
@@ -57,6 +58,18 @@ export default function Write() {
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
           />
+        </div>
+        <div className="writeCategories">
+          <label for="subject">Blog Kategorisi  </label>
+              <select id="subject" name="subject" onChange={e=>setSubject(e.target.value)} >
+              <option value="yazilim">Yazılım</option>
+              <option value="teknoloji">Teknoloji</option>
+              <option value="muzik">Müzik</option> 
+              <option value="gundem">Gündem</option>
+              <option value="havadis">Havadis</option>
+              <option value="diger">Diğer</option>
+              </select>
+
         </div>
         <div className="writeFormGroup col-lg-12">
           <textarea
