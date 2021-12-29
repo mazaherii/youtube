@@ -97,7 +97,7 @@ export default function SinglePost() {
           <p className="singlePostDesc">{desc}</p>
         )}
         {updateMode && (
-          <button className="singlePostButton" onClick={handleUpdate}>
+          <button className="gangeri" onClick={handleUpdate}>
             Update
           </button>
         )}

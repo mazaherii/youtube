@@ -4,6 +4,24 @@
 .singlePost a{
   color: #181818;
 }
+.dangeri {
+	background: crimson;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 25px 10px 25px;
+}
+
+.gangeri {
+	background: #3f32a2;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 25px 10px 25px;
+	font-size: 22px;
+	font-weight: bolder;
+	max-width: 300px;
+}
 
 .singlePostWrapper {
   padding: 20px;
